@@ -1,0 +1,208 @@
+
+@media only screen and (max-width: 640px) {
+  .screen-view {
+    visibility: hidden;
+  }
+
+  .mobile-view {
+    visibility: visible;
+    display: inline-block;
+    padding-top: .1em;
+    padding-left: 1em;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot, .prev, .next {
+    visibility: hidden;
+  }
+
+  img {
+    width: 220px;
+    max-width: 220px;
+    border-radius: 12px;
+  }
+
+  .icon {
+    text-align: center;
+    font-size: 42pt;
+    padding-top: .3em;
+    text-shadow: 3px 3px  22px #ffffff;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 24pt;
+    margin: .4em;
+    position: relative;
+    color: #FFFFFF;
+  }
+
+  .intro {
+    margin: .3em;
+    text-align: center;
+    font-size: 18pt;
+    color: #e3e3e3;
+  }
+}
+
+
+@media only screen and (min-width: 640px) {
+ .screen-view {
+    visibility: visible;
+   float: top;
+  }
+
+  .mobile-view {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot, .prev, .next {
+    position: inherit;
+    float: right;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    background-color: #bbb;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .dot {
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  img {
+    width: 460px;
+    max-width: 460px;
+    padding-left: .1em;
+    border-radius: 12px;
+  }
+
+  .icon {
+    text-align: center;
+    padding-top: .3em;
+    font-size: 30pt;
+    text-shadow: 3px 3px  22px #ffffff;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 30pt;
+    margin: .4em;
+    position: relative;
+    color: #FFFFFF;
+  }
+
+  .intro {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 1em;
+    position: relative;
+    text-align: center;
+    font-size: 20pt;
+    color: #e3e3e3;
+  }
+}
+
+html,
+body,
+input {
+  background: #000000;
+  margin:auto;
+  position:center;
+  width: border-box;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+header {
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 80000;
+}
+
+header ul.mui-list--inline {
+  margin-bottom: 0;
+}
+
+header a {
+  color: white;
+}
+
+header table {
+  width: 100%;
+}
+
+#content-wrapper {
+  min-height: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  transition: all .8s ease-in-out;
+  background-color: #e3e3e3;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #eab0f1;
+  color: white;
+}
+
+* {box-sizing:border-box}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #717171;
+}
+
+table {
+ float: left;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ul {
+  list-style-type: none;
+}

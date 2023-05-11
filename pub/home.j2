@@ -1,0 +1,23 @@
+
+{% include 'nav.j2' %}
+
+<div class="intro header">
+    Visit:
+    <a href="/dashboard/drink/astoria">/dashboard/drink/Astoria</a> to demo the drink template
+</div>
+
+<div id="content-wrapper" class="card-hide">
+    <script>
+        {
+            var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+                navigator.userAgent &&
+                navigator.userAgent.indexOf('CriOS') === -1 &&
+                navigator.userAgent.indexOf('FxiOS') === -1;
+
+            console.log(isSafari)
+            if (isSafari === true) {
+                alert('Hola!  On an 🍎 mobile device? Jess built this responsive web application with mobile devices & desktop browsers in mind!  🔧 Use the "Add to Homescreen" feature to save this app to your device!')
+            }
+        }
+    </script>
+</div>

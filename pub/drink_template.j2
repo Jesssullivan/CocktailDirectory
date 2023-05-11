@@ -1,0 +1,23 @@
+
+{% include 'nav.j2' %}
+
+<div class="header">{{ title }}</div>
+
+
+<div>
+    <div class="container intro">
+        <div class="intro"> <i>Author: {{ author }}</i></div>
+      <ul>
+        {% for verison in forms.items() %}
+            <li><b>{{ verison[0] }}: </b> <i>{{ verison[1] }}</i></li>
+        {% endfor %}
+        </ul>
+        <ul>
+        {% for step in steps %}
+            <li><b>{{ step }}</b></li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div id="content-wrapper"></div>
